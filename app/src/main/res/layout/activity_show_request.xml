@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dark.a99app.Employee.ShowRequest"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/respond"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/BurlyWood"
+        android:text="إستجابة"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment_emer" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="الملاحظة"
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/comment_emer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_med" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginStart="20dp"
+        android:text="مقطع صوتي"
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/show_location"
+        app:layout_constraintEnd_toStartOf="@+id/play_audio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+    <ImageView
+        android:id="@+id/play_audio"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="169dp"
+        app:layout_constraintBottom_toTopOf="@+id/show_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:srcCompat="@drawable/play" />
+
+    <EditText
+        android:id="@+id/comment_emer"
+        android:layout_width="211dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:inputType="textMultiLine"
+        android:text="أحتاج إلى مساعدة في اسرع وقت"
+        app:layout_constraintBottom_toTopOf="@+id/respond"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="محمد"
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/show_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/SteelBlue"
+        android:text="الموقع"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toTopOf="@+id/show_med"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/show_med"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/CadetBlue"
+        android:text="التاريخ الطبي"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_location" />
+</android.support.constraint.ConstraintLayout>
